@@ -1,0 +1,26 @@
+{
+  "marca": "@gotoku.app",
+  "colores": {
+    "fondo": "#0D0A12",
+    "panel": "#1A1322",
+    "acento": "#FC0360",
+    "verde": "#9AF739",
+    "naranja": "#FF7A5C",
+    "arena": "#E4D2AE",
+    "gris": "#4A4B4F",
+    "lila": "#B59BC9"
+  },
+  "vaivenes": [
+    ["COSTEÁ", "CADA ROLL"],
+    ["MEDÍ TU", "DELIVERY"],
+    ["SABÉ", "CUÁNTO GANÁS"]
+  ],
+  "linterna": {
+    "lineas": ["¿CUÁNTO GANÁS", "REALMENTE?"],
+    "cursiva": "gotoku.app"
+  },
+  "cierre": {
+    "llamada": "GOTOKU · COSTEO INTELIGENTE",
+    "sigue": "@gotoku.app"
+  }
+}
