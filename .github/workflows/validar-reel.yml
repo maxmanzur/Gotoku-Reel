@@ -41,7 +41,7 @@ jobs:
       - name: Generar HTML
         run: |
           python generar_gotoku.py
-          cp index_gotoku.html index.html
+          mv index_gotoku.html index.html
 
       - name: Validar composición Hyperframes
         run: npx --yes hyperframes@0.9.19 lint .
@@ -63,7 +63,7 @@ jobs:
           name: gotoku-reel-render
           path: |
             gotoku-reel.mp4
-            index_gotoku.html
+            index.html
             .hyperframes/artifacts/snapshots/**
           if-no-files-found: error
           retention-days: 7
