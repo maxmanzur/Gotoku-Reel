@@ -45,17 +45,17 @@ html = f"""<!doctype html>
 #ambient{{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(181,155,201,.15),transparent 55%)}}
 #brand{{position:absolute;top:105px;width:100%;text-align:center;font-size:30px;font-weight:650;letter-spacing:.08em;color:#E4D2AE}}
 #stage{{position:absolute;inset:0;perspective:1600px}}
-#rock{{position:absolute;left:0;bottom:-10px;width:1080px;height:660px;object-fit:cover;object-position:center;filter:brightness(.72) contrast(1.12)}}
-#phone{{position:absolute;left:50%;top:850px;width:570px;height:1120px;transform:translate(-50%,-50%) rotate(-7deg) rotateY(-9deg);transform-style:preserve-3d;border:13px solid #39323f;border-radius:76px;background:linear-gradient(135deg,#81778a,#17121e 26%,#08070b 72%,#665d70);padding:12px;box-shadow:36px 50px 70px rgba(0,0,0,.62),-10px -8px 30px rgba(181,155,201,.2),inset 0 0 0 3px #a69aac;overflow:hidden}}
+#rock{{position:absolute;z-index:1;left:0;bottom:-10px;width:1080px;height:660px;object-fit:cover;object-position:center;filter:brightness(.72) contrast(1.12)}}
+#phone{{position:absolute;z-index:2;left:50%;top:850px;width:570px;height:1120px;transform:translate(-50%,-50%) rotate(-7deg) rotateY(-9deg);transform-style:preserve-3d;border:13px solid #39323f;border-radius:76px;background:linear-gradient(135deg,#81778a,#17121e 26%,#08070b 72%,#665d70);padding:12px;box-shadow:36px 50px 70px rgba(0,0,0,.62),-10px -8px 30px rgba(181,155,201,.2),inset 0 0 0 3px #a69aac;overflow:hidden}}
 #glass{{position:absolute;inset:12px;border-radius:53px;overflow:hidden;background:#0D0A12;border:2px solid #08070b}}
 .screen{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;filter:saturate(.96)}}
 #glare{{position:absolute;inset:0;pointer-events:none;background:linear-gradient(118deg,transparent 22%,rgba(255,255,255,.12) 37%,transparent 49%);mix-blend-mode:screen}}
 #phone:after{{content:"";position:absolute;top:16px;left:50%;width:115px;height:25px;transform:translateX(-50%);border-radius:20px;background:#08070b;z-index:5}}
-.claim{{position:absolute;top:335px;width:100%;text-align:center;font-size:108px;line-height:1.03;font-weight:900;letter-spacing:-.055em;color:#fff;opacity:0;text-shadow:0 5px 28px rgba(0,0,0,.45)}.claim span{{display:block}}.claim em{{font-style:normal;color:{colors['acento']}}}
-#flash{{position:absolute;inset:0;opacity:0;background:radial-gradient(ellipse at 50% 48%,rgba(154,247,57,.19),transparent 52%);pointer-events:none}}
-#final{{position:absolute;top:390px;width:100%;text-align:center;font-weight:900;font-size:92px;line-height:1.12;letter-spacing:-.045em;opacity:0;color:#fff;text-shadow:0 5px 25px #000}}#final em{{font-family:Serif;color:{colors['acento']};font-weight:400}}
-#end{{position:absolute;top:1410px;width:100%;text-align:center;opacity:0}}#end strong{{display:block;font-size:42px;color:#fff;letter-spacing:.02em}}#end small{{display:block;margin-top:20px;font-size:30px;color:#E4D2AE}}
-#metric{{position:absolute;right:74px;top:1040px;padding:18px 24px;border:1px solid {colors['verde']};border-radius:18px;color:{colors['verde']};font:700 25px Inter;background:rgba(13,10,18,.82);opacity:0;box-shadow:0 0 28px rgba(154,247,57,.18)} 
+.claim{{position:absolute;z-index:4;top:335px;width:100%;text-align:center;font-size:108px;line-height:1.03;font-weight:900;letter-spacing:-.055em;color:#fff;opacity:0;text-shadow:0 5px 28px rgba(0,0,0,.45)}.claim span{{display:block}}.claim em{{font-style:normal;color:{colors['acento']}}}
+#flash{{position:absolute;z-index:5;inset:0;opacity:0;background:radial-gradient(ellipse at 50% 48%,rgba(154,247,57,.19),transparent 52%);pointer-events:none}}
+#final{{position:absolute;z-index:6;top:390px;width:100%;text-align:center;font-weight:900;font-size:92px;line-height:1.12;letter-spacing:-.045em;opacity:0;color:#fff;text-shadow:0 5px 25px #000}}#final em{{font-family:Serif;color:{colors['acento']};font-weight:400}}
+#end{{position:absolute;z-index:7;top:1410px;width:100%;text-align:center;opacity:0}}#end strong{{display:block;font-size:42px;color:#fff;letter-spacing:.02em}}#end small{{display:block;margin-top:20px;font-size:30px;color:#E4D2AE}}
+#metric{{position:absolute;z-index:4;right:74px;top:1040px;padding:18px 24px;border:1px solid {colors['verde']};border-radius:18px;color:{colors['verde']};font:700 25px Inter;background:rgba(13,10,18,.82);opacity:0;box-shadow:0 0 28px rgba(154,247,57,.18)} 
 </style></head>
 <body><div id="root" data-composition-id="main" data-start="0" data-duration="17" data-width="1080" data-height="1920">
 <div id="ambient"></div><div id="brand">@gotoku.app</div><div id="stage">
