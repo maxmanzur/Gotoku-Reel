@@ -27,3 +27,15 @@ No reemplazar ni modificar los archivos fuente originales hasta tener una copia 
 ## Seguridad del proyecto
 
 Este repositorio es independiente de `maxmanzur/Gotoku`, la aplicación principal. No contiene ni modifica el código de la app GOTOKU.
+
+
+## Generador GOTOKU (adaptación independiente)
+
+La plantilla original de la bola se conserva sin cambios. Para generar la versión GOTOKU con teléfono 2.5D y capturas reales:
+
+1. Ejecutar desde la raíz: `python generar_gotoku.py`.
+2. Se crea `index_gotoku.html`.
+3. Revisar el HTML y validar con Hyperframes antes de renderizar.
+4. Los textos y la paleta oficial se editan en `reel_gotoku.json`.
+
+El generador usa las capturas de `assets/gotoku/`, la plataforma `plataforma_roca.png`, las fuentes y los sonidos existentes. La generación y el render final todavía deben ejecutarse y revisarse visualmente; este commit no equivale a una prueba de render.
