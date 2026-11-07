@@ -69,7 +69,7 @@ html = f"""<!doctype html>
 <script>
 const D=17, $=id=>document.getElementById(id);
 const screens=[0,1,2].map(i=>$('screen'+i)), claims=[0,1,2].map(i=>$('claim'+i));
-function fade(el,v){el.style.opacity=v}
+function fade(el,v){{el.style.opacity=v}}
 function draw(t){{
   screens.forEach((el,i)=>fade(el,Math.max(0,1-Math.abs(t-(2.1+i*3.0))/1.0)));
   claims.forEach((el,i)=>{{const a=1.0+i*3.0;fade(el,Math.max(0,Math.min((t-a)/.22,(a+1.75-t)/.28,1)));}});
