@@ -55,7 +55,7 @@ html = f"""<!doctype html>
 #flash{{position:absolute;z-index:5;inset:0;opacity:0;background:radial-gradient(ellipse at 50% 48%,rgba(154,247,57,.19),transparent 52%);pointer-events:none}}
 #final{{position:absolute;z-index:6;top:390px;width:100%;text-align:center;font-weight:900;font-size:92px;line-height:1.12;letter-spacing:-.045em;opacity:0;color:#fff;text-shadow:0 5px 25px #000}}#final em{{font-family:Serif;color:{colors['acento']};font-weight:400}}
 #end{{position:absolute;z-index:7;top:1410px;width:100%;text-align:center;opacity:0}}#end strong{{display:block;font-size:42px;color:#fff;letter-spacing:.02em}}#end small{{display:block;margin-top:20px;font-size:30px;color:#E4D2AE}}
-#metric{{position:absolute;z-index:4;right:74px;top:1040px;padding:18px 24px;border:1px solid {colors['verde']};border-radius:18px;color:{colors['verde']};font:700 25px Inter;background:rgba(13,10,18,.82);opacity:0;box-shadow:0 0 28px rgba(154,247,57,.18)} 
+#metric{{position:absolute;z-index:4;right:74px;top:1040px;padding:18px 24px;border:1px solid {colors['verde']};border-radius:18px;color:{colors['verde']};font:700 25px Inter;background:rgba(13,10,18,.82);opacity:0;box-shadow:0 0 28px rgba(154,247,57,.18)}} 
 </style></head>
 <body><div id="root" data-composition-id="main" data-start="0" data-duration="17" data-width="1080" data-height="1920">
 <div id="ambient"></div><div id="brand">@gotoku.app</div><div id="stage">
