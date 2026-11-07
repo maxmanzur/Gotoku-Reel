@@ -1,4 +1,4 @@
-name: Validar generador del reel GOTOKU
+name: Generar y validar reel GOTOKU
 
 on:
   push:
@@ -13,31 +13,57 @@ on:
   workflow_dispatch:
 
 jobs:
-  generar-y-validar:
+  generar-y-renderizar:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
+
       - name: Preparar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Instalar FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
       - name: Comprobar sintaxis Python
         run: python -m py_compile generar_gotoku.py
+
       - name: Generar HTML
-        run: python generar_gotoku.py
-      - name: Verificar salida y recursos
         run: |
-          test -s index_gotoku.html
-          grep -q 'data-composition-id="main"' index_gotoku.html
-          grep -q 'assets/gotoku/platos.png' index_gotoku.html
-          grep -q 'assets/gotoku/delivery.png' index_gotoku.html
-          grep -q 'assets/gotoku/resumen.png' index_gotoku.html
-          grep -q 'assets/gotoku/plataforma_roca.png' index_gotoku.html
-      - name: Publicar HTML generado
+          python generar_gotoku.py
+          cp index_gotoku.html index.html
+
+      - name: Validar composición Hyperframes
+        run: npx --yes hyperframes@0.9.19 lint .
+
+      - name: Capturar fotogramas de revisión
+        run: npx --yes hyperframes@0.9.19 snapshot . --at 1.5,4.5,7.5,10.8,14.5,16
+
+      - name: Renderizar MP4
+        run: npx --yes hyperframes@0.9.19 render --composition index.html --output gotoku-reel.mp4 --fps 30 --quality standard
+
+      - name: Verificar video generado
+        run: |
+          test -s gotoku-reel.mp4
+          ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 gotoku-reel.mp4
+
+      - name: Publicar reel y fotogramas
         uses: actions/upload-artifact@v4
         with:
-          name: gotoku-reel-html
-          path: index_gotoku.html
+          name: gotoku-reel-render
+          path: |
+            gotoku-reel.mp4
+            index_gotoku.html
+            .hyperframes/artifacts/snapshots/**
           if-no-files-found: error
           retention-days: 7
