@@ -51,7 +51,7 @@ html = f"""<!doctype html>
 .screen{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;filter:saturate(.96)}}
 #glare{{position:absolute;inset:0;pointer-events:none;background:linear-gradient(118deg,transparent 22%,rgba(255,255,255,.12) 37%,transparent 49%);mix-blend-mode:screen}}
 #phone:after{{content:"";position:absolute;top:16px;left:50%;width:115px;height:25px;transform:translateX(-50%);border-radius:20px;background:#08070b;z-index:5}}
-.claim{{position:absolute;z-index:4;top:335px;width:100%;text-align:center;font-size:108px;line-height:1.03;font-weight:900;letter-spacing:-.055em;color:#fff;opacity:0;text-shadow:0 5px 28px rgba(0,0,0,.45)}.claim span{{display:block}}.claim em{{font-style:normal;color:{colors['acento']}}}
+.claim{{position:absolute;z-index:4;top:335px;width:100%;text-align:center;font-size:108px;line-height:1.03;font-weight:900;letter-spacing:-.055em;color:#fff;opacity:0;text-shadow:0 5px 28px rgba(0,0,0,.45)}}.claim span{{display:block}}.claim em{{font-style:normal;color:{colors['acento']}}}
 #flash{{position:absolute;z-index:5;inset:0;opacity:0;background:radial-gradient(ellipse at 50% 48%,rgba(154,247,57,.19),transparent 52%);pointer-events:none}}
 #final{{position:absolute;z-index:6;top:390px;width:100%;text-align:center;font-weight:900;font-size:92px;line-height:1.12;letter-spacing:-.045em;opacity:0;color:#fff;text-shadow:0 5px 25px #000}}#final em{{font-family:Serif;color:{colors['acento']};font-weight:400}}
 #end{{position:absolute;z-index:7;top:1410px;width:100%;text-align:center;opacity:0}}#end strong{{display:block;font-size:42px;color:#fff;letter-spacing:.02em}}#end small{{display:block;margin-top:20px;font-size:30px;color:#E4D2AE}}
