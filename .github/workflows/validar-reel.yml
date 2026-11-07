@@ -1,0 +1,36 @@
+name: Validar generador del reel GOTOKU
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "generar_gotoku.py"
+      - "reel_gotoku.json"
+      - "assets/gotoku/**"
+      - "assets/fonts/**"
+      - "assets/sfx/**"
+      - ".github/workflows/validar-reel.yml"
+  workflow_dispatch:
+
+jobs:
+  generar-y-validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Comprobar sintaxis Python
+        run: python -m py_compile generar_gotoku.py
+      - name: Generar HTML
+        run: python generar_gotoku.py
+      - name: Verificar salida y recursos
+        run: |
+          test -s index_gotoku.html
+          grep -q 'data-composition-id="main"' index_gotoku.html
+          grep -q 'assets/gotoku/platos.png' index_gotoku.html
+          grep -q 'assets/gotoku/delivery.png' index_gotoku.html
+          grep -q 'assets/gotoku/resumen.png' index_gotoku.html
+          grep -q 'assets/gotoku/plataforma_roca.png' index_gotoku.html
