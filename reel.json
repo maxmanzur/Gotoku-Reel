@@ -1,0 +1,13 @@
+{
+  "marca": "@tu_marca",
+  "colores": {"fondo": "#EAE2CD", "tinta": "#141210", "acento": "#F2551E", "oscuro": "#14151A", "bola": "#FE6C2F"},
+  "vaivenes": [
+    ["HE HECHO", "ESTE REEL."],
+    ["SIN", "*EDITOR.*"],
+    ["SIN CÁMARA.", "SIN EQUIPO."],
+    ["SOLO UNA", "*SKILL.*"],
+    ["EN CLAUDE", "*CODE.*"]
+  ],
+  "linterna": {"lineas": ["IMAGINA", "A TU PÚBLICO", "MIRANDO ASÍ"], "cursiva": "tu marca."},
+  "cierre": {"llamada": "comenta «REEL» y te paso la skill", "sigue": "sígueme para más IA"}
+}

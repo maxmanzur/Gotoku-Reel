@@ -1,0 +1,11 @@
+{
+  "marca": "@gotoku.app",
+  "colores": {"fondo": "#EAE2CD", "tinta": "#141210", "acento": "#F2551E", "oscuro": "#14151A", "bola": "#FE6C2F"},
+  "vaivenes": [
+    ["COSTEÁ", "CADA ROLL"],
+    ["MEDÍ TU", "DELIVERY"],
+    ["SABÉ", "CUÁNTO GANÁS"]
+  ],
+  "linterna": {"lineas": ["¿CUÁNTO GANÁS", "REALMENTE?"], "cursiva": "gotoku.app"},
+  "cierre": {"llamada": "GOTOKU · COSTEO INTELIGENTE", "sigue": "@gotoku.app"}
+}
