@@ -34,7 +34,7 @@ sfx = [
     ("switch1", 9.5, .7), ("fan2", 11.1, .45), ("glass1", 12.2, .25),
     ("drop2", 14.2, .45), ("chip3", 14.65, .55), ("tick2", 15.1, .35)
 ]
-audio = "".join(f'<audio src="assets/sfx/{name}.mp3" data-start="{start}" data-duration="1.8" data-track-index="{20+i}" data-volume="{vol}"></audio>' for i,(name,start,vol) in enumerate(sfx))
+audio = "".join(f'<audio id="sfx-{name}" src="assets/sfx/{name}.mp3" data-start="{start}" data-duration="1.8" data-track-index="{20+i}" data-volume="{vol}"></audio>' for i,(name,start,vol) in enumerate(sfx))
 html = f"""<!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=1080,height=1920">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
