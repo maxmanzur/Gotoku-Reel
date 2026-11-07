@@ -1,0 +1,116 @@
+{
+ "slide1": {
+  "file": "sfx/slide1.mp3",
+  "duration": 0.601,
+  "pico": 0.155,
+  "fuente": "kenney/casino/card-slide-1"
+ },
+ "slide2": {
+  "file": "sfx/slide2.mp3",
+  "duration": 0.584,
+  "pico": 0.075,
+  "fuente": "kenney/casino/card-slide-2"
+ },
+ "slide3": {
+  "file": "sfx/slide3.mp3",
+  "duration": 0.598,
+  "pico": 0.085,
+  "fuente": "kenney/casino/card-slide-3"
+ },
+ "slide4": {
+  "file": "sfx/slide4.mp3",
+  "duration": 0.601,
+  "pico": 0.125,
+  "fuente": "kenney/casino/card-slide-5"
+ },
+ "shove1": {
+  "file": "sfx/shove1.mp3",
+  "duration": 0.766,
+  "pico": 0.125,
+  "fuente": "kenney/casino/card-shove-1"
+ },
+ "shove2": {
+  "file": "sfx/shove2.mp3",
+  "duration": 0.767,
+  "pico": 0.215,
+  "fuente": "kenney/casino/card-shove-2"
+ },
+ "soft1": {
+  "file": "sfx/soft1.mp3",
+  "duration": 0.115,
+  "pico": 0.005,
+  "fuente": "kenney/impact/impactSoft_medium_000"
+ },
+ "soft2": {
+  "file": "sfx/soft2.mp3",
+  "duration": 0.18,
+  "pico": 0.005,
+  "fuente": "kenney/impact/impactSoft_medium_001"
+ },
+ "switch1": {
+  "file": "sfx/switch1.mp3",
+  "duration": 0.608,
+  "pico": 0.005,
+  "fuente": "kenney/interface/switch_002"
+ },
+ "switch2": {
+  "file": "sfx/switch2.mp3",
+  "duration": 0.497,
+  "pico": 0.005,
+  "fuente": "kenney/interface/switch_004"
+ },
+ "glass1": {
+  "file": "sfx/glass1.mp3",
+  "duration": 0.207,
+  "pico": 0.005,
+  "fuente": "kenney/impact/impactGlass_light_001"
+ },
+ "glass2": {
+  "file": "sfx/glass2.mp3",
+  "duration": 0.207,
+  "pico": 0.005,
+  "fuente": "kenney/impact/impactGlass_light_003"
+ },
+ "fan2": {
+  "file": "sfx/fan2.mp3",
+  "duration": 1.307,
+  "pico": 1.055,
+  "fuente": "kenney/casino/card-fan-2"
+ },
+ "drop2": {
+  "file": "sfx/drop2.mp3",
+  "duration": 0.188,
+  "pico": 0.005,
+  "fuente": "kenney/interface/drop_002"
+ },
+ "chip3": {
+  "file": "sfx/chip3.mp3",
+  "duration": 0.266,
+  "pico": 0.095,
+  "fuente": "kenney/casino/chip-lay-3"
+ },
+ "tick2": {
+  "file": "sfx/tick2.mp3",
+  "duration": 0.054,
+  "pico": 0.025,
+  "fuente": "kenney/ui/rollover2"
+ },
+ "click1": {
+  "file": "sfx/click1.mp3",
+  "duration": 0.012,
+  "pico": 0.005,
+  "fuente": "kenney/interface/click_002"
+ },
+ "click2": {
+  "file": "sfx/click2.mp3",
+  "duration": 0.007,
+  "pico": 0.005,
+  "fuente": "kenney/interface/click_003"
+ },
+ "click3": {
+  "file": "sfx/click3.mp3",
+  "duration": 0.007,
+  "pico": 0.005,
+  "fuente": "kenney/interface/click_005"
+ }
+}
